@@ -4,6 +4,6 @@
     msiexec: True
     reboot: False
     installer: 'salt://win/repo-ng-installers/7zip/7z1900-x64.msi'    
-    install_flags: '/qn'
-    uninstaller: 'salt://win/repo-ng-installers/7zip/7z1900-x64.msi'    
-    uninstall_flags: '/qn'  
+    install_flags: ' /qn /norestart '
+    uninstaller: 'salt://win/repo-ng-installers/7zip/7z1900-x64.msi'
+    uninstall_flags: ' /qn /norestart '  
