@@ -4,7 +4,7 @@
     msiexec: True
     reboot: False
     installer: 'salt://win/repo-ng-installers/7zip/7z1900-x64.msi'    
-    install_flags: '/qn INSTALLDIR={{ salt[\'pillar.get\'](\'7zip:folder\') }}'
+    install_flags: '/qn INSTALLDIR={{ salt['pillar.get']('7zip:folder') }}'
     uninstaller: 'salt://win/repo-ng-installers/7zip/7z1900-x64.msi'
     uninstall_flags: '/qn'  
   '16.04.00.0':
